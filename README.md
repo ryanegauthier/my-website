@@ -24,6 +24,11 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+```
+./start.sh
+
+```
+ This command will spin up a NGINX Docker container that will serve the static content into localhost:8080
 ### Deployment
 
 Using SSH:

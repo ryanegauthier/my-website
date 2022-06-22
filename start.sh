@@ -1,6 +1,6 @@
-docker pull ryangauthier/docusaurus-app-name
+docker build -t dockernginx .
 
 docker run --log-opt max-size=5m -d \
--p 3000:3000 \
---name bob \
-ryangauthier/docusaurus-app-name
+-p 80:80 \
+--name document-app \
+dockernginx:latest
